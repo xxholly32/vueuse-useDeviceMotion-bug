@@ -7,7 +7,7 @@
     <a
       i-carbon-logo-github icon-btn
       rel="noreferrer"
-      href="https://github.com/antfu/vitesse-lite"
+      href="https://github.com/xxholly32/vueuse-useDeviceMotion-bug"
       target="_blank"
       title="GitHub"
     />
