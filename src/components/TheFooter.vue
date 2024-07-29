@@ -21,5 +21,12 @@
         vueuse-fix-demo
       </button>
     </router-link>
+    <router-link to="/ios-demo">
+      <button
+        icon-btn
+      >
+        ios-demo
+      </button>
+    </router-link>
   </nav>
 </template>

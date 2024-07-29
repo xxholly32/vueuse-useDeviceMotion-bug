@@ -21,12 +21,11 @@ const text = computed(() => JSON.stringify({
   },
   interval: motion.interval,
 }, null, 2))
-// const text = computed(() => JSON.stringify(motion, null, 2))
 </script>
 
 <template>
   <h1 class="mb-2">
-    Device Motion:
+    vueuse fix demo:
   </h1>
   <pre lang="json">{{ text }}</pre>
 </template>
