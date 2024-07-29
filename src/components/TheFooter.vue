@@ -1,15 +1,25 @@
 <template>
   <nav mt-6 inline-flex gap-2 text-xl>
-    <button icon-btn @click="toggleDark()">
-      <div i-carbon-sun dark:i-carbon-moon />
-    </button>
-
-    <a
-      i-carbon-logo-github icon-btn
-      rel="noreferrer"
-      href="https://github.com/xxholly32/vueuse-useDeviceMotion-bug"
-      target="_blank"
-      title="GitHub"
-    />
+    <router-link to="/">
+      <button
+        icon-btn
+      >
+        Home
+      </button>
+    </router-link>
+    <router-link to="/vueuse-demo">
+      <button
+        icon-btn
+      >
+        vueuse-demo
+      </button>
+    </router-link>
+    <router-link to="/vueuse-fix-demo">
+      <button
+        icon-btn
+      >
+        vueuse-fix-demo
+      </button>
+    </router-link>
   </nav>
 </template>

@@ -1,6 +1,7 @@
 /// <reference types="vitest" />
 
 import path from 'node:path'
+import fs from 'node:fs'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
@@ -11,6 +12,12 @@ import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 
 export default defineConfig({
+  server: {
+    https: {
+      key: fs.readFileSync('./key.pem'),
+      cert: fs.readFileSync('./cert.pem'),
+    },
+  },
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
