@@ -1,29 +1,29 @@
 <template>
-  <nav mt-6 inline-flex gap-2 text-xl>
+  <nav mt-6 gap-2 text-xl flex="~ col">
     <router-link to="/">
       <button
-        icon-btn
+        btn
       >
         Home
       </button>
     </router-link>
     <router-link to="/vueuse-demo">
       <button
-        icon-btn
+        btn
       >
         vueuse-demo
       </button>
     </router-link>
     <router-link to="/vueuse-fix-demo">
       <button
-        icon-btn
+        btn
       >
         vueuse-fix-demo
       </button>
     </router-link>
     <router-link to="/ios-demo">
       <button
-        icon-btn
+        btn
       >
         ios-demo
       </button>
